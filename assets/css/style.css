@@ -131,7 +131,8 @@
 /* Link Bar Styles */
 .link-bar-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -140,14 +141,16 @@
 .link-bar-item {
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-bottom: 10px;
   transition: background-color 0.3s ease;
   padding: 10px;
   border-radius: 5px;
+  width: 100%;
+  max-width: 300px; /* Adjust this value as needed */
 }
 
 .link-bar-item:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .link-bar-item img {
@@ -160,6 +163,8 @@
   margin-right: 10px;
   text-decoration: none;
   color: inherit;
+  flex-grow: 1;
+  text-align: left;
 }
 
 .link-bar-item span {
@@ -171,6 +176,7 @@
   color: #1e5ac9;
   background-color: white;
 }
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
