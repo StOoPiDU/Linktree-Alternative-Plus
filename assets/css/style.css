@@ -127,32 +127,65 @@
   -webkit-border-radius: 5px;
 } */
 
-
-.link-bar {
+/* LAST WORKED WITH */
+/* Link Bar Styles */
+.link-bar-container {
   display: flex;
-  flex-direction: column; /* Display links in a column */
-  align-items: center; /* Center the links horizontally */
-  gap: 10px; /* Add 10px spacing between links */
-  background: none;
-  color: #fff;
-  border: 2px solid #fff;
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 1px;
-  margin-top: 1.5em;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.link-bar:hover{
+.link-bar-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.link-bar-item:last-child {
+  margin-right: 0;
+}
+
+.link-bar-item img {
+  margin-right: 10px;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.link-bar-item a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.link-bar-item span {
+  margin-left: 10px;
+}
+
+/* Hover Effect */
+.link-bar-item:hover {
   color: #1e5ac9;
   background-color: white;
 }
 
-.link-bar a img {
-  width: 20px; /* Set the width of the image */
-  height: 20px; /* Set the height of the image */
-  margin-right: 10px; /* Add some spacing between the image and text */
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .link-bar-item img {
+    max-width: 20px;
+    max-height: 20px;
+  }
+
+  .link-bar-item a {
+    font-size: 14px;
+  }
+
+  .link-bar-item span {
+    font-size: 12px;
+  }
 }
 
 /* main body */
@@ -490,17 +523,6 @@ a.hoverline:hover {
   padding-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  .link-bar {
-    flex-direction: row; /* Display links in a row on smaller screens */
-    justify-content: center; /* Center the links horizontally */
-    flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
-  }
-
-  .link-bar a {
-    margin: 5px; /* Add some spacing between links */
-  }
-}
 
 #info .center-image {
   display: block;
