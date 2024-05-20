@@ -127,32 +127,63 @@
   -webkit-border-radius: 5px;
 } */
 
-.link-bar {
+
+/* Put this somewhere:
+  border-radius: 5px;
+  -webkit-border-radius: 5px; */
+
+.link-bar-container {
   display: flex;
-  flex-direction: column; /* Display links in a column */
-  align-items: center; /* Center the links horizontally */
-  gap: 10px; /* Add 10px spacing between links */
+  justify-content: center;
+  width: 100%;
   background: none;
   color: #fff;
-  border: 2px solid #fff;
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 1px;
-  margin-top: 1.5em;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
 }
 
-.link-bar:hover{
-  color: #1e5ac9;
-  background-color: white;
+.link-bar {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.link-bar a img {
-  width: 20px; /* Set the width of the image */
-  height: 20px; /* Set the height of the image */
-  margin-right: 10px; /* Add some spacing between the image and text */
+.link-item {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Adjust the spacing between items */
+  transition: transform 0.3s ease; /* Add transition for smooth hover effect */
 }
+
+.link-item:hover {
+  transform: scale(1.1); /* Scale up the item on hover */
+}
+
+.link-image {
+  width: 24px; /* Adjust the size of the image */
+  height: 24px;
+  margin-right: 8px; /* Adjust the spacing between image and link */
+}
+
+.link-anchor {
+  text-decoration: none;
+  color: #333; /* Adjust the link color */
+  margin-right: 8px; /* Adjust the spacing between link and span */
+  transition: color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.link-anchor:hover {
+  color: #666; /* Change the link color on hover */
+}
+
+.link-span {
+  color: #666; /* Adjust the span color */
+  transition: color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.link-span:hover {
+  color: #333; /* Change the span color on hover */
+}
+
 
 /* main body */
 
