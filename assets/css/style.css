@@ -111,9 +111,9 @@
   background-color: #a50000;
 }
 
-/* Buttons - Read Me, Contact Us */
+/* Buttons - Link-Bar */
 
-.readme {
+/* .readme {
   position: relative;
   padding: 11px 35px;
   background: #fff;
@@ -125,35 +125,13 @@
   display: inline-block;
   border-radius: 5px;
   -webkit-border-radius: 5px;
-}
-
-/* .readme:hover{
-  color: white;
-  background-color: #1e5ac9;
 } */
 
-.contactme {
-  position: relative;
-  padding: 11px 35px;
-  background: none;
-  color: #fff;
-  border: 2px solid #fff;
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 1px;
-  display: inline-block;
-  margin-top: 1.5em;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-}
 
-.contactme:hover{
-  color: #1e5ac9;
-  background-color: white;
-}
+/* THIS IS THE LAST SPOT */
 
 .link-bar {
-  position: relative;
+  /* position: relative;
   padding: 11px 35px;
   background: none;
   color: #fff;
@@ -164,13 +142,24 @@
   display: inline-block;
   margin-top: 1.5em;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
+  -webkit-border-radius: 5px; */
+  display: flex;
+  flex-direction: column; /* Display links in a column */
+  align-items: center; /* Center the links horizontally */
+  gap: 10px; /* Add 10px spacing between links */
 }
 
 .link-bar:hover{
   color: #1e5ac9;
   background-color: white;
 }
+
+.link-bar a img {
+  width: 20px; /* Set the width of the image */
+  height: 20px; /* Set the height of the image */
+  margin-right: 10px; /* Add some spacing between the image and text */
+}
+
 /* main body */
 
 /* body-color */
@@ -531,28 +520,15 @@ a.hoverline:hover {
   padding-bottom: 10px;
 }
 
-/* #event .row {
-  display: flex;
-  align-items: center;
-} */
-
-/* Mobile View Image Centering For Event Page*/
-#event .center-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: 768px) {
-  #event .row {
-    display: flex;
-    align-items: center;
+@media (max-width: 768px) {
+  .link-bar {
+    flex-direction: row; /* Display links in a row on smaller screens */
+    justify-content: center; /* Center the links horizontally */
+    flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
   }
 
-  .center-image {
-    display: flex;
-    margin: auto;
-    align-items: center;
+  .link-bar a {
+    margin: 5px; /* Add some spacing between links */
   }
 }
 
