@@ -1,54 +1,5 @@
-.profile-pic {
-  position: relative;
-  max-width:130px;
-  max-height:130px;
-  width: auto;
-  height: auto;
-  overflow: hidden;
-  /* display: inline-block; */
-
-
-  /* background-size: cover;  */
-  margin: -31px;
-  margin-left:-7px;
-  border: 6px solid rgba(21, 17, 63);
-  border-radius: 50% !important;
-}
-
-.profile-pic img {
-  width: 100%;
-  height: auto;
-}
-
-.tracker {
-  /* visibility: hidden; */
-  position: fixed;
-  /* margin-inline-end: auto;  */
-  bottom: 0;
-  right: 0;
-}
-
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
-.social {
-  margin: 0 auto;
-  width: auto;
-  text-align: inherit;
-  /* padding: 10px; */
-}
 
-.icon-btn {
-  margin-left: auto;
-  width: 50px;
-  height: 50px;
-  border: 0;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-size: 30px;
-  line-height: 70px;
-  border-radius: 45px;
-  display: inline-block;
-  margin: 4px;
-}
 
 .github {
   color: black;
@@ -146,7 +97,8 @@
   padding: 10px;
   border-radius: 5px;
   width: 100%;
-  max-width: 300px; /* Adjust this value as needed */
+  max-width: 80%;
+  border: 1px solid white;
 }
 
 .link-bar-item:last-child {
@@ -202,18 +154,6 @@ body {
   color: #333;
   font-size: 18px;
 }
-
-/* body {
-  color: black;
-  font-size: 18px;
-} */
-
-/* main a -- links */
-
-/* a {
-  color: #0600c6;
-} */
-
 a {
   color: #15113f;
 }
@@ -222,7 +162,7 @@ a {
   text-align: center;
 }
 
-/* main nav */
+/* Navbar */
 
 nav {
   background: #fff;
@@ -260,7 +200,6 @@ nav.thin {
 
 main {
   padding-top: 30px;
-  background: url(../../assets/img/bg.png) repeat;
 }
 
 dl {
