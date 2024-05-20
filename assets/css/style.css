@@ -131,22 +131,19 @@
 /* THIS IS THE LAST SPOT */
 
 .link-bar {
-  /* position: relative;
-  padding: 11px 35px;
+  display: flex;
+  flex-direction: column; /* Display links in a column */
+  align-items: center; /* Center the links horizontally */
+  gap: 10px; /* Add 10px spacing between links */
   background: none;
   color: #fff;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
-  display: inline-block;
   margin-top: 1.5em;
   border-radius: 5px;
-  -webkit-border-radius: 5px; */
-  display: flex;
-  flex-direction: column; /* Display links in a column */
-  align-items: center; /* Center the links horizontally */
-  gap: 10px; /* Add 10px spacing between links */
+  -webkit-border-radius: 5px;
 }
 
 .link-bar:hover{
