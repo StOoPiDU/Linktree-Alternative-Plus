@@ -111,7 +111,7 @@
   background-color: #a50000;
 }
 
-/* Buttons - Link-Bar */
+/* Link-Bar */
 
 /* .readme {
   position: relative;
@@ -126,9 +126,6 @@
   border-radius: 5px;
   -webkit-border-radius: 5px;
 } */
-
-
-/* THIS IS THE LAST SPOT */
 
 .link-bar {
   display: flex;
@@ -179,31 +176,6 @@ body {
 
 a {
   color: #15113f;
-}
-
-/* main blockqoute */
-
-/* blockquote {
-  border-left: 5px solid #795548;
-  color: #795548;
-  font-size: 125%;
-  font-weight: 400;
-  margin: 20px 0;
-  padding-left: 1.5rem;
-} */
-
-blockquote {
-  border-left: 5px solid #795548;
-  color: #795548;
-  font-size: 125%;
-  font-weight: 400;
-  margin: 20px 0;
-  padding-left: 1.5rem;
-}
-
-blockquote * {
-  font-size: inherit;
-  line-height: inherit;
 }
 
 .text-center {
