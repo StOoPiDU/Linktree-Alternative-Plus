@@ -520,17 +520,7 @@ a.hoverline:hover {
   padding-bottom: 10px;
 }
 
-/* @media (max-width: 768px) {
-  .link-bar {
-    flex-direction: row; /* Display links in a row on smaller screens */
-    justify-content: center; /* Center the links horizontally */
-    flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
-  }
 
-  .link-bar a {
-    margin: 5px; /* Add some spacing between links */
-  }
-} */
 
 #info .center-image {
   display: block;
