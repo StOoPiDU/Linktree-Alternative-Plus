@@ -1,85 +1,213 @@
+/* Import Font */
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
-
-.github {
-  color: black;
+/* Body and Typography */
+body {
+  color: #333;
+  font-size: 18px;
 }
 
-.instagram {
-  color: #da39b1;
+a {
+  color: #15113f;
 }
 
-.linkedin {
-  color: #0077b5;
+.text-center {
+  text-align: center;
 }
 
-.reddit {
-  color: #f06b1e;
-}
-
-.tiktok {
-  color: black;
-}
-
-.twitter {
-  color: #0077b5;
-}
-
-.youtube {
-  color: #a50000;
-}
-
-.icon-btn:hover {
-  transform: scale(1.10);
-  color: #FFFFFF;
-}
-
-.github:hover {
-  background-color: black;
-}
-
-.instagram:hover {
-  background-color: #da39b1;
-}
-
-.linkedin:hover {
-  background-color: #0077b5;
-}
-
-.reddit:hover {
-  background-color: #f06b1e;
-}
-
-.tiktok:hover {
-  background-color: black;
-}
-
-.twitter:hover {
-  background-color: #0077b5;
-}
-
-.youtube:hover {
-  background-color: #a50000;
-}
-
-/* Link-Bar */
-
-/* .readme {
-  position: relative;
-  padding: 11px 35px;
+/* Navbar */
+nav {
   background: #fff;
-  color: #1e5ac9;
-  border: 2px solid #fff;
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 1px;
-  display: inline-block;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-} */
+  height: 64px;
+  position: absolute;
+}
 
-/* LAST WORKED WITH */
-/* Link Bar Styles */
+nav.thin {
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.name-title {
+  display: block;
+  height: 100%;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
+.name-title > span,
+.name-title > a {
+  position: relative;
+  line-height: 24px;
+}
+
+.name-title a {
+  font-size: 30px;
+  display: block;
+}
+
+.name-title span {
+  display: block;
+  font-size: 19px;
+}
+
+/* Main Content */
+main {
+  padding-top: 30px;
+}
+
+.container {
+  width: 95%;
+}
+
+h3 {
+  font-weight: 200;
+  margin-bottom: 60px;
+  margin-top: 0;
+  padding: 30px 40px;
+  text-transform: uppercase;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+/* Intro Section */
+#intro.section {
+  background: #231d68 repeat;
+  position: relative;
+}
+
+#intro.section .container {
+  color: white;
+  font-weight: 200;
+  left: 0;
+  position: absolute;
+}
+
+#intro.section .container *:not(span) {
+  font-weight: 300;
+  line-height: 150%;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#intro.section .underline {
+  border-bottom: 5px solid #24305e;
+}
+
+#intro.section .teal {
+  padding: 0 10px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* Teal Color */
+.teal-text {
+  color: #0600c6 !important;
+}
+
+.teal {
+  background-color: #0600c6 !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  main {
+    padding-left: 0px;
+    padding-top: 64px;
+  }
+
+  nav {
+    background: #fff;
+    height: 64px;
+    position: absolute;
+  }
+
+  nav.thin {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+
+  h3 {
+    padding: 20px 30px;
+    margin-bottom: 40px;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .name-title {
+    display: block;
+    height: 100%;
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+  }
+
+  .name-title > span,
+  .name-title > a {
+    position: relative;
+    line-height: 20px;
+  }
+
+  .name-title a {
+    font-size: 22px;
+    display: block;
+  }
+
+  .name-title span {
+    display: block;
+    font-size: 14px;
+  }
+
+  h3,
+  .container {
+    position: relative;
+    top: 64px;
+  }
+
+  section#intro {
+    margin-bottom: -64px;
+  }
+
+  .card .role {
+    position: relative;
+    right: initial;
+    top: initial;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 22px;
+    line-height: 200%;
+    margin: 30px 0 0;
+  }
+
+  #intro.section .container *:not(span) {
+    padding: 0;
+  }
+
+  #intro.section {
+    background-position-x: 30%;
+  }
+}
+
+/* Link Bar */
 .link-bar-container {
   display: flex;
   flex-direction: column;
@@ -123,14 +251,11 @@
   margin-left: 10px;
 }
 
-/* Hover Effect */
 .link-bar-item:hover {
   color: #1e5ac9;
   background-color: white;
 }
 
-
-/* Responsive Styles */
 @media (max-width: 768px) {
   .link-bar-item img {
     max-width: 20px;
@@ -143,217 +268,5 @@
 
   .link-bar-item span {
     font-size: 12px;
-  }
-}
-
-/* main body */
-
-/* body-color */
-
-body {
-  color: #333;
-  font-size: 18px;
-}
-a {
-  color: #15113f;
-}
-
-.text-center {
-  text-align: center;
-}
-
-/* Navbar */
-
-nav {
-  background: #fff;
-  height: 64px;
-  position: absolute;
-}
-nav.thin {
-  display: block;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-}
-.name-title {
-  display: block;
-  height: 100%;
-  padding-top: 10px;
-  text-align: center;
-  width: 100%;
-  position: absolute;
-}
-.name-title>span, .name-title>a {
-  position: relative;
-  line-height: 24px;
-}
-.name-title a {
-  font-size: 30px;
-  display: block;
-}
-.name-title span {
-  display: block;
-  font-size: 19px;
-}
-
-/* main */
-
-main {
-  padding-top: 30px;
-}
-
-.container {
-  width: 95%;
-}
-
-h3 {
-  font-weight: 200;
-  margin-bottom: 60px;
-  margin-top: 0;
-  padding: 30px 40px;
-  text-transform: uppercase;
-}
-
-/* .section {
-  padding-bottom: 30px;
-  padding-top: 0;
-  position: relative;
-} */
-
-.full-height {
-  height: 100vh;
-}
-
-/* Original */
-
-#intro.section {
-  background: #231d68 repeat;
-  position: relative;
-}
-
-#intro.section .container {
-  color: white;
-  font-weight: 200;
-  left: 0;
-  position: absolute;
-  /* top: 0;  This could be 10% but it's messing with all res*/
-}
-
-/* #intro.section .container *:not(span) {
-  font-weight: 300;
-  line-height: 150%;
-  padding: 0 30px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-} */
-
-#intro.section .container *:not(span) {
-  font-weight: 300;
-  /* font-weight: 400; */
-  line-height: 150%;
-  /* padding: 0 0px; */
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
-
-#intro.section .underline {
-  border-bottom: 5px solid #24305e;
-}
-
-#intro.section .teal {
-  padding: 0 10px;
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-/* main .teal-text RENAMETHIS*/
-
-.teal-text {
-  color: #0600c6 !important;
-}
-
-/* .teal RENAMETHIS*/
-
-.teal {
-  background-color: #0600c6 !important;
-}
-
-/* .teal {
-  background-color: #00695c !important;
-} */
-
-@media (max-width: 992px) {
-  main {
-    padding-left: 0px;
-    padding-top: 64px;
-  }
-  nav {
-    background: #fff;
-    height: 64px;
-    position: absolute;
-  }
-  nav.thin {
-    display: block;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-  }
-  h3 {
-    padding: 20px 30px;
-    margin-bottom: 40px;
-  }
-  .container {
-    margin: 0 auto;
-  }
-  .name-title {
-    display: block;
-    height: 100%;
-    padding-top: 15px;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-  }
-  .name-title>span, .name-title>a {
-    position: relative;
-    line-height: 20px;
-  }
-  .name-title a {
-    font-size: 22px;
-    display: block;
-  }
-  .name-title span {
-    display: block;
-    font-size: 14px;
-  }
-  h3, .container {
-    position: relative;
-    top: 64px;
-  }
-  section#intro {
-    margin-bottom: -64px;
-  }
-  .card .role {
-    position: relative;
-    right: initial;
-    top: initial;
-  }
-}
-
-@media (max-width: 600px) {
-  h2 {
-    font-size: 22px;
-    line-height: 200%;
-    margin: 30px 0 0;
-  }
-  #intro.section .container *:not(span) {
-    padding: 0;
-  }
-  #intro.section {
-    background-position-x: 30%;
   }
 }
