@@ -1,104 +1,62 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
     --textColor: white;
-    --font: 'Karla', sans-serif;
+    --font: 'Roboto', sans-serif;
 }
-
 html {
-    /*FONT:*/
-    font-family: var(--font);
-    color: var(--textColor);
-    font-size: 18px;
-    font-weight: 400;
+  /*FONT:*/
+  font-family: var(--font);
+  color: var(--textColor);
+  font-size: 1.4em;
+  font-weight: 400;
 
-    /*BACKGROUND:*/
-    background-color: #1e5ac9;
+  /*BACKGROUND:*/
+  background-color: #15113e;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 body {
-    margin: 10px auto; /*auto - center the linktree*/
+  margin: 10px auto; /*auto - center the linktree*/
 }
 
-img {
-    width: 130px;
-    height: 130px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 50%; /*round image*/
+#logo {
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin: 20px auto;
 }
 
-#userName {
-    font-weight: 700; /*bold*/
+#title {
+  font-weight: 700; /*bold*/
 }
 
 #description {
-    margin: 20px auto;
+  margin: 20px auto;
 }
 
 main {
-    width: auto;
-    max-width: 500px;
-    margin: 15px auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 15px auto;
 }
 
 /*LINKS*/
 a {
-    /*LINKS TEXT*/
-    color: var(--textColor);
-    text-decoration: none;
-    text-align: center;
-
-    /*LINKS BORDER:*/
-    border: 2px solid var(--textColor);
-    border-radius: 10px;
-
-    display: block; /*each link takes a whole line*/
-    margin: 10px;
-    padding: 10px;
-}
-
-/* Navbar */
-nav {
-  background: #fff;
-  height: 64px;
-  position: relative;
-  z-index: 2;
-}
-
-nav.thin {
-  display: block;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-}
-
-.name-title {
-  display: block;
-  height: 100%;
-  padding-top: 10px;
+  /*LINKS TEXT*/
+  color: var(--textColor);
+  text-decoration: none;
   text-align: center;
-  width: 100%;
-  position: absolute;
-}
 
-.name-title > span,
-.name-title > a {
-  position: relative;
-  line-height: 24px;
-}
+  /*LINKS BORDER:*/
+  border: 2px solid var(--textColor);
+  border-radius: 10px;
 
-.name-title a {
-  font-size: 30px;
-  display: block;
-}
-
-.name-title span {
-  display: block;
-  font-size: 19px;
+  display: block; /*each link takes a whole line*/
+  margin: 10px;
+  padding: 10px;
 }
