@@ -13,10 +13,7 @@ html {
     font-weight: 400;
 
     /*BACKGROUND:*/
-    background: url('/images/sky.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #1e5ac9;
 
     display: flex;
     flex-direction: column;
@@ -64,4 +61,44 @@ a {
     display: block; /*each link takes a whole line*/
     margin: 10px;
     padding: 10px;
+}
+
+/* Navbar */
+nav {
+  background: #fff;
+  height: 64px;
+  position: relative;
+  z-index: 2;
+}
+
+nav.thin {
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.name-title {
+  display: block;
+  height: 100%;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
+.name-title > span,
+.name-title > a {
+  position: relative;
+  line-height: 24px;
+}
+
+.name-title a {
+  font-size: 30px;
+  display: block;
+}
+
+.name-title span {
+  display: block;
+  font-size: 19px;
 }
