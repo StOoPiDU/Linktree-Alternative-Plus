@@ -52,7 +52,7 @@ div {
   text-decoration: none;
   display: flex; /* Use flexbox */
   align-items: center; /* Vertically center the content */
-  justify-content: center; /* Horizontally center the content */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
 
   /*Link Border:*/
   border: 2px solid var(--textColor);
@@ -66,4 +66,9 @@ img {
   /*Link Image*/
   width: 50px;
   margin-right: 10px; /* Add some space between the image and text */
+}
+
+.arrow-icon {
+  font-size: 24px; /* Adjust the size of the arrow icon */
+  margin-left: 10px; /* Add some space between the text and arrow icon */
 }
