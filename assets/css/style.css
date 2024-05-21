@@ -24,7 +24,7 @@ body {
   margin: 10px auto; /*auto - center the linktree*/
 }
 
-#logo {
+img.logo {
   width: 130px;
   height: 130px;
   display: block;
@@ -46,13 +46,16 @@ main {
 }
 
 /*LINKS*/
-a {
-  /*LINKS TEXT*/
+div {
+  /*Link Text*/
   color: var(--textColor);
   text-decoration: none;
   text-align: center;
 
-  /*LINKS BORDER:*/
+  /*Link Image*/
+  width: 50px;
+
+  /*Link Border:*/
   border: 2px solid var(--textColor);
   border-radius: 10px;
 
