@@ -5,13 +5,12 @@
     --font: 'Roboto', sans-serif;
 }
 html {
-  /*FONT:*/
+  /* Font (Might Adjust More)*/
   font-family: var(--font);
   color: var(--textColor);
   font-size: 1.4em;
   font-weight: 400;
 
-  /*BACKGROUND:*/
   background-color: #15113e;
 
   display: flex;
@@ -21,7 +20,7 @@ html {
 }
 
 body {
-  margin: 10px auto; /*auto - center the linktree*/
+  margin: 10px auto;
 }
 
 img.logo {
@@ -45,7 +44,7 @@ main {
   margin: 15px auto;
 }
 
-/*LINKS*/
+/* Links */
 div {
   /*Link Text*/
   color: var(--textColor);
@@ -68,7 +67,8 @@ img {
   margin-right: 10px; /* Add some space between the image and text */
 }
 
+/* TEMP ICON */
 .arrow-icon {
-  font-size: 24px; /* Adjust the size of the arrow icon */
-  margin-left: 10px; /* Add some space between the text and arrow icon */
+  font-size: 24px;
+  margin-left: 10px;
 }
