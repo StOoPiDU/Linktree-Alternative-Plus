@@ -45,13 +45,13 @@ main {
 }
 
 /* Links */
-div {
+#linkbar {
   /*Link Text*/
   color: var(--textColor);
   text-decoration: none;
-  display: flex; /* Use flexbox */
-  align-items: center; /* Vertically center the content */
-  justify-content: space-between; /* Distribute items evenly along the main axis */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   /*Link Border:*/
   border: 2px solid var(--textColor);
@@ -59,16 +59,39 @@ div {
 
   margin: 10px;
   padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+#linkbar:hover {
+  background-color: #2c2a5e; /* Maybe just make it black? Or Invert the colours. */
+  transform: scale(1.05);
 }
 
 img {
   /*Link Image*/
   width: 50px;
-  margin-right: 10px; /* Add some space between the image and text */
+  margin-right: 10px;
 }
 
-/* TEMP ICON */
-.arrow-icon {
+/* Info Stuff */
+.info {
   font-size: 24px;
   margin-left: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+  font-style: normal;
+  line-height: 24px; /* Needs to match font size */
+  /* display: inline-block; */ /* Not needed I think */
+}
+
+.info:hover {
+  background-color: black;
+}
+
+.moreInfo {
+  background-color: #0a0a0a;
+  padding: 10px;
+  margin-top: 5px;
 }

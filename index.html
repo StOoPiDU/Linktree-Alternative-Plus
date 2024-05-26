@@ -82,50 +82,129 @@
 
     <main>
       <a href="https://old.reddit.com/r/FreeGameFindings">
-        <div>
+        <div id="linkbar">
           <img src="assets/img/reddit_logo.png" alt="Reddit Logo">
           <p>/r/FreeGameFindings on Reddit</p>
-          <i class="arrow-icon">&#8595;</i>
+          <i class="info" data-target="reddit-info" onclick="toggleInfo(event)">&#9432;</i>
         </div>
       </a>
+      <div id="reddit-info" class="moreInfo" style="display: none;">
+        <p>This is the additional information section.</p>
+      </div>
+
       <a href="https://twitter.com/FreeGameFinding">
-        <div>
+        <div id="linkbar">
           <img src="assets/img/twitter-logo.svg" alt="Twitter Logo">
           <p>@FreeGameFinding on Twitter</p>
-          <i class="arrow-icon">&#8595;</i>
+          <i class="info" data-target="twitter-info" onclick="toggleInfo(event)">&#9432;</i>
         </div>
       </a>
+      <div id="twitter-info" class="moreInfo" style="display: none;">
+        <p>This is the additional information section.</p>
+      </div>
+
       <a href="https://play.google.com/store/apps/details?id=com.cedric.fgf&pcampaignid=web_share">
-        <div>
-          <img src="assets/img/android-logo.svg" alt="Android Logo">
+        <div id="linkbar">
+          <img src="assets/img/android-logo-greeen.png" alt="Android Logo">
           <p>Free Game Findings Android Application</p>
-          <i class="arrow-icon">&#8595;</i>
+          <i class="info" data-target="app-info" onclick="toggleInfo(event)">&#9432;</i>
         </div>
       </a>
+      <div id="app-info" class="moreInfo" style="display: none;">
+        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+      </div>
+
       <a href="https://www.humblebundle.com/?partner=freegamefindings">
-        <div>
+        <div id="linkbar">
           <img src="assets/img/humble.png" alt="Humble Bundle Logo">
-          <p>/r/FreeGameFindings Referral on Humble Bundle</p>
-          <i class="arrow-icon">&#8595;</i>
+          <p>FreeGameFindings Referral on Humble Bundle</p>
+          <i class="info" data-target="humble-info" onclick="toggleInfo(event)">&#9432;</i>
         </div>
       </a>
+      <div id="humble-info" class="moreInfo" style="display: none;">
+        <p>Humble Info</p>
+      </div>
+
       <a href="https://www.youtube.com/@freegamefindings">
-        <div>
+        <div id="linkbar">
           <img src="assets/img/youtube-logo.svg" alt="Android Logo">
           <p>@FreeGameFindings on YouTube</p>
-          <i class="arrow-icon">&#8595;</i>
+          <i class="info" data-target="youtube-info" onclick="toggleInfo(event)">&#9432;</i>
         </div>
       </a>
+      <div id="youtube-info" class="moreInfo" style="display: none;">
+        <p>YouTube Information.</p>
+      </div>
+
       <a href="https://www.tiktok.com/@freegamefindings">
-        <div>
+        <div id="linkbar">
           <img src="assets/img/tiktok-logo.svg" alt="TikTok Logo">
           <p>@FreeGameFindings on TikTok</p>
-          <i class="arrow-icon">&#8595;</i>
+          <i class="info" data-target="tiktok-info" onclick="toggleInfo(event)">&#9432;</i>
         </div>
       </a>
-      <!-- <a href="https://www.instagram.com/alisayar_/" target="_blank">
-        <i class="fab fa-instagram">&nbsp;</i> Instagram
-      </a> -->
+      <div id="tiktok-info" class="moreInfo" style="display: none;">
+        <p>TikTok Information</p>
+      </div>
+
+      <a href="https://steamcommunity.com/groups/freegamefindings">
+        <div id="linkbar">
+          <img src="assets/img/steam_logo_filled.png" alt="Steam Logo">
+          <p>FreeGameFindings Steam Group</p>
+          <i class="info" data-target="steam-info" onclick="toggleInfo(event)">&#9432;</i>
+        </div>
+      </a>
+      <div id="steam-info" class="moreInfo" style="display: none;">
+        <p>Steam group junk and stuff and things</p>
+      </div>
+
+      <a href="https://www.instagram.com/freegamefinding/">
+        <div id="linkbar">
+          <img src="assets/img/instagram-logo.svg" alt="Instagram Logo">
+          <p>FreeGameFindings on Insta</p>
+          <i class="info" data-target="insta-info" onclick="toggleInfo(event)">&#9432;</i>
+        </div>
+      </a>
+      <div id="insta-info" class="moreInfo" style="display: none;">
+        <p>Instagram videos and stuff.</p>
+      </div>
+
+      <a href="https://www.threads.net/@freegamefinding">
+        <div id="linkbar">
+          <img src="assets/img/threads-logo.png" alt="Threads Logo">
+          <p>FreeGameFindings on Threads</p>
+          <i class="info" data-target="thread-info" onclick="toggleInfo(event)">&#9432;</i>
+        </div>
+      </a>
+      <div id="thread-info" class="moreInfo" style="display: none;">
+        <p>lol Threads</p>
+      </div>
+
+      <a href="https://linktr.ee/stoopid_u">
+        <div id="linkbar">
+          <img src="assets/img/stoopid_logo.png" alt="StOoPiD_U Logo">
+          <p>FGF Creator on Linktree</p>
+          <i class="info" data-target="stoopid-info" onclick="toggleInfo(event)">&#9432;</i>
+        </div>
+      </a>
+      <div id="stoopid-info" class="moreInfo" style="display: none;">
+        <p>Free Game Findings was created by StOoPiD_U, or Cedric in 2014. Since then, he has continued to work on the leadership of the FGF group on and off of Reddit. Beyond that, he also spends time working on projects of his, and livestreaming.</p>
+      </div>
+
+      <script>
+        function toggleInfo(event) {
+          event.preventDefault(); // Prevent the default link behavior
+          const icon = event.currentTarget;
+          const targetId = icon.getAttribute('data-target');
+          const infoSection = document.getElementById(targetId);
+          if (infoSection.style.display === "none") {
+            infoSection.style.display = "block";
+          } else {
+            infoSection.style.display = "none";
+          }
+        }
+      </script>
+
     </main>
 
   </body>
