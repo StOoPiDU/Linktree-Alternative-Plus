@@ -45,6 +45,10 @@ main {
   margin: 15px auto;
 }
 
+a {
+  text-decoration: none; /* Removal of text decoration on the a tag */
+}
+
 /* Links */
 #linkbar {
   /*Link Text*/
