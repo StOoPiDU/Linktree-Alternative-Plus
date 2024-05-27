@@ -10,6 +10,7 @@ html {
   color: var(--textColor);
   font-size: 1.4em;
   font-weight: 400;
+  text-decoration: none;
 
   background-color: #15113e;
 
@@ -92,6 +93,9 @@ img {
 
 .moreInfo {
   background-color: black;
+  /* position: absolute; */
   padding: 10px;
   margin-top: 5px;
+  max-width: 720px;
+  border-radius: 10px;
 }
