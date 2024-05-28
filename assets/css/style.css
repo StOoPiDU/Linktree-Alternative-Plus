@@ -103,3 +103,16 @@ img {
   max-width: 720px;
   border-radius: 10px;
 }
+
+.moreInfo p {
+  text-align: left;
+}
+
+.moreInfo img#hori {
+  width: 100%;
+}
+
+.moreInfo img#vert {
+  height: 500px;
+  width: auto;
+}
