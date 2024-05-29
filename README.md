@@ -6,7 +6,7 @@
 ### Website Preview
 <p align="center">
   <kbd>
-    <a href="https://freegamefinsings.github.io/" target="_blank"><img src="examples/preview.JPG">
+    <a href="https://freegamefinsings.github.io/" target="_blank"><img src="examples/preview.PNG">
   </a>
   </kbd>
 </p>
