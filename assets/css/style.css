@@ -114,3 +114,10 @@ img {
   height: 500px;
   width: auto;
 }
+
+/* Removing the extra-large gap between the icon when the screen is smaller. */
+@media (max-width: 500px) {
+  .info {
+    margin-left: 10px;
+  }
+}
