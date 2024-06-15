@@ -1,5 +1,5 @@
 # A linktree alternative for /r/FreeGameFindings
-> A list of all the official Free Game Findings links and related platforms with some examples and and direct links to follow. Think a simply LinkTree website, but with included details when possible.
+> A list of all the official Free Game Findings links and related platforms with some examples and and direct links to follow. Think a simple LinkTree website, but with included details when possible.
 > Feel free to clone this project and change the included content into whatever fits your needs. Please consider Starring this repo if you like! <3
 
 > Template code was used from here. I edited a lot of it since but I figured I should shout it out anyway: https://github.com/alisa-yar/Linktree-Alternative
