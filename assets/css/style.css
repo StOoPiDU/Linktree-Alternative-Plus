@@ -115,6 +115,14 @@ img {
   width: auto;
 }
 
+#seperator {
+  border: none;
+  border-top: 2px solid white;
+  width: 75%;
+  margin: 10 auto;;
+/*   display: block; */
+}
+
 /* Removing the extra-large gap between the icon when the screen is smaller. */
 @media (max-width: 500px) {
   .info {
